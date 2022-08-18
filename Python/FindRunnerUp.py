@@ -1,16 +1,19 @@
 n = int(input())
 arr = map(int, input().strip().split())
 
-unique_list = []
+# Create  a list with n items and sort ascending
+UniqueList = []
 
 for i in arr:
-    if i not in unique_list:
-        unique_list.append(i)
+    if i not in UniqueList:
+        UniqueList.append(i)
     
 
-unique_list.sort()
+UniqueList.sort()
 
-index_of_second = len(unique_list)-2
+# Index the runner-up
 
-print(unique_list[index_of_second])
+RunnerUp_index = len(UniqueList)-2
+
+print(UniqueList[RunnerUp_index])
 
