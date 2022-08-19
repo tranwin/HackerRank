@@ -1,12 +1,11 @@
 import numpy
 
-r, c =input().split()
-r = int(r)
+r, c =list(map(lambda x:int(x),input().split()))
 lst = []
 
-# Create a list consisting of input values
+# Create a list of input integers:
 for i in range(r):
-    lst.append(input().split())
+    lst.append(list(map(lambda x:int(x),input().split())))
 
 my_array = numpy.array(lst)
 
