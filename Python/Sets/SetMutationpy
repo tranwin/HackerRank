@@ -1,0 +1,17 @@
+#n = int(input())
+
+m = set(map(int, input().split()))
+
+cmd = input()
+a = set(map(int, input().split()))
+
+if cmd[0] == 'intersection_update':
+    m = m.intersection(a)
+elif cmd[0] == 'update':
+    m = m.add(a)
+elif cmd[0] == 'symmetric_difference_update':
+    m = m.symmetric_difference(a)
+elif cmd[0] == 'difference':
+    m = m.difference(a)
+
+print(len(m))
